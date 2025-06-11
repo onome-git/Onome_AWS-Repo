@@ -7,3 +7,4 @@ variable "ecs_clusters_map" {
     prod = "prod-cluster"
   }
 
+}
