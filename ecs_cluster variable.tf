@@ -6,4 +6,4 @@ variable "ecs_clusters_map" {
     qa   = "qa-cluster"
     prod = "prod-cluster"
   }
-}
+
