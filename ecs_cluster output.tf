@@ -5,5 +5,5 @@ output "ecs_cluster_names" {
 
 output "ecs_cluster_arns" {
   description = "Map of ECS cluster ARNs"
-  value       = { for k, c in aws_ecs_cluster.this : k => c.arn }
+  value       = { for k, c in aws_ecs_cluster.onome_ecs : k => c.arn }
 }
