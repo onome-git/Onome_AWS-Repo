@@ -3,4 +3,3 @@ resource "aws_ecs_cluster" "onome_ecs" {
 
   name = each.value
 }
-
