@@ -10,9 +10,9 @@ locals {
                                             ensure each bucket has public access blocked */
 
 resource "aws_s3_bucket" "top5_buckets" {
-  for_each     = local.favorite_restaurants
-  bucket       = each.value
-  force_destroy = true
+  for_each       = local.favorite_restaurants
+  bucket         = each.value
+  force_destroy  = true
 }
 
 resource "aws_s3_bucket_public_access_block" "block_public_access" {
