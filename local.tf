@@ -1,8 +1,8 @@
-locals { /* create 5 S3 buckets from list of favorite restaurants and
-            ensure each bucket has public access blocked */
+locals { 
   favorite_restaurants = {
     keela    = "keela-bucket"
-    mckibbons     = "mckibbons-bucket"
+    mckibbons     = "mckibbons-bucket"       /*CLASSWORK: create 5 S3 buckets from list of favorite restaurants and
+                                               ensure each bucket has public access blocked */
     sesame = "sesame-bucket"
     bordhouse     = "birdhouse-bucket"
     k2     = "k2-bucket"
