@@ -1,10 +1,10 @@
 locals { 
   favorite_restaurants = {
-    keela    = "keela-bucket"
-    mckibbons     = "mckibbons-bucket"       
-    sesame = "sesame-bucket"
-    bordhouse     = "birdhouse-bucket"
-    k2     = "k2-bucket"
+    keela          = "keela-bucket"
+    mckibbons      = "mckibbons-bucket"       
+    sesame         = "sesame-bucket"
+    bordhouse      = "birdhouse-bucket"
+    k2             = "k2-bucket"
   }       
   }                                     /* CLASSWORK: create 5 S3 buckets from list of favorite restaurants and
                                             ensure each bucket has public access blocked */
