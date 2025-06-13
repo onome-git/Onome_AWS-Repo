@@ -1,4 +1,5 @@
-locals { # create 5 S3 buckets from list of favorite restaurants and ensure each bucket has public access blocked
+locals { */ create 5 S3 buckets from list of favorite restaurants and 
+           ensure each bucket has public access blocked/*
   favorite_restaurants = {
     keela    = "keela-bucket"
     mckibbons     = "mckibbons-bucket"
