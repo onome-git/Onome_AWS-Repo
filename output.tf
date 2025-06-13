@@ -16,7 +16,7 @@ output "public_ips" {
 
 
 
-output "s3_bucket_names" {    #👌
+output "s3_bucket_names" {    #👌OUTPUT FOR THE 5 FAVORTIE RESTUARANT BUCKETS
   description = "The names of the created S3 buckets."
   value       = [for bucket in aws_s3_bucket.top5_buckets : bucket.bucket]
 }
