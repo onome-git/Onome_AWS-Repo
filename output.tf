@@ -13,3 +13,15 @@ output "public_ips" {
     name => instance.public_ip
   }
 }
+
+
+
+output "s3_bucket_names" {    #👌
+  description = "The names of the created S3 buckets."
+  value       = [for bucket in aws_s3_bucket.top5_buckets : bucket.bucket]
+}
+
+output "s3_bucket_ids" {
+  description = "The IDs of the created S3 buckets."
+  value       = [for bucket in aws_s3_bucket.top5_buckets : bucket.id]
+}
